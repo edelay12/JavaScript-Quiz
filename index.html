@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="A multiple choice quiz over javascript" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Roboto:100,300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Javascript Quiz - By: Evan Miller</title>
+  </head>
+  <body>
+    <header id="topH">
+      <h1 class="headerLabel">Javascript Quiz</h1>
+      <nav class="score-prog _hide">
+        <label for="current-question" id="progId">Question: </label>
+        <label for="score" id="scoreId">Score</label>
+      </nav>
+    </header>
+    <div class="focus">
+      <main class="startScreen" role="main">
+        <img
+          class="mainImg"
+          rel="Javascript image"
+          src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/205/square_280/javascriptlang.png"
+        />
+        <h3 class="ff">Test your knowledge</h3>
+        <button id="startButton">Lets get started</button>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="store.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 400px) {
+    .focus {
+        width: 90%;
+    }
+    #qLabel {
+        width: 80%;
+        font-size: 15px;
+    }
+    .mainQ{
+        font-size: 18px;
+
+    }
+    .mainQarea {
+        margin-top: 2px;
+        margin-bottom: 10px;
+        }
+
+}
+@media  only screen and (max-width:680px) {
+.focus {
+    width: 90%;
+}
+#qLabel {
+    width: 50%;
+}
+}
+
+@media only screen and (min-width:780px) {
+    .focus {
+        width: 70%;
+    }
+    #qLabel {
+        width: 50%;
+    }
+    
+ }
