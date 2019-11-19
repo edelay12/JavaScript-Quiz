@@ -1,4 +1,5 @@
 window.onload = function() {
+  this.startQuiz();
   this.console.log("Quiz Loaded Successfully");
 };
 
@@ -63,8 +64,6 @@ function next() {
   $("#nextButton").on("click", function() {
     handleProgress();
     togElement(".submitButton", ".nextButton");
-    //$(".submitButton").show();
-    //$(".nextButton").hide();
   });
 }
 
@@ -83,7 +82,7 @@ ${q} </label></br><hr> `;
 
 //renders question to DOM
 function renderQuestion() {
-  console.log("ren q ran");
+  console.log("rendered a question");
   let nextQuestion = queNewQuestion(STORE);
   $(".qHTML").html(nextQuestion);
 }
@@ -110,7 +109,9 @@ function results() {
   $(".focus").html(`<div class="results_hide">
   <h3 class="ff">Your score was ${score} / ${STORE.questions.length}</h3>
   <button id="startButton" class="retake">Retake</button></div>`);
-  $(".retake").on("click", startQuiz());
+  $(".retake").on("click", function(){
+    document.location.reload()
+  });
   curQuestion = 0;
   score = 0;
 }
@@ -121,8 +122,4 @@ function run() {
   console.log(curQuestion);
 }
 
-function runPage() {
-  startQuiz();
-}
 
-runPage();
