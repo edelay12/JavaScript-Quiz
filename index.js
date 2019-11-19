@@ -105,9 +105,11 @@ function renderAnswers() {
 }
 
 function results() {
+  togElement('.score-prog');
   $(".focus").html(`<div class="results_hide">
-  <h3 class="ff">Your score was ${score} / ${STORE.questions.length}</h3>
+  <h3 class="fr">Your score was ${score}/${STORE.questions.length}</h3>
   <button id="startButton" class="retake">Retake</button></div>`);
+
   $(".retake").on("click", function(){
     document.location.reload()
   });
