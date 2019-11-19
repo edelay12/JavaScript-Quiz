@@ -44,6 +44,7 @@ const STORE = {
       options: ["Error", "73", "7 '3'", "10"],
       answer: "73"
     },
+    //7
     {
       question: "How do you empty an Array in JavaScript?",
       options: [
@@ -54,22 +55,26 @@ const STORE = {
       ],
       answer: "All of the above"
     },
+    //8
     {
       question: "Which of the following is not a data type in JavaScript?",
       options: ["Object", "Number", "Symbol", "Defined"],
       answer: "Defined"
     },
+    //9
     {
       question: "Which of the following is not a reserved word in JavaScript?",
       options: ["interface", "throws", "program", "short"],
       answer: "program"
     },
+    //10
     {
       question:
         "Which built-in method returns the characters in a string beginning at the specified location?",
       options: ["substr()", "getSubstring()", "slice()", "None of the above"],
       answer: "substr()"
     },
+    //11
     {
       question:
         "Which of the following function of String object returns the primitive value of the specified object.",
@@ -81,17 +86,20 @@ const STORE = {
       ],
       answer: "valueOf()"
     },
+    //12
     {
       question:
         "Which of the following function of Array object sorts the elements of an array?",
       options: ["toSource()", "sort()", "toString()", "unshift()"],
       answer: "sort()"
     },
+    //13
     {
       question: "Javascript is a _________ language?",
       options: ["Scripting", "Application", "Programming", "None of the above"],
       answer: "Scripting"
     },
+    //14
     {
       question: "JavaScript is designed for which of the following purpose?",
       options: [
@@ -102,6 +110,7 @@ const STORE = {
       ],
       answer: "Add interactivity to HTML Pages"
     },
+    //15
     {
       question:
         "Which of the following is the correct syntax to display “message” in an alert box using JavaScript?",

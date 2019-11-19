@@ -27,7 +27,6 @@ function startQuiz() {
 function submitAnser() {
   $("body").on("submit", "#quizForm", function(event) {
     event.preventDefault();
-
     let correctAnswer = STORE.questions[curQuestion].answer;
     let selectedOption = $("input[name=qs]:checked").val();
     if (!selectedOption) {
@@ -68,7 +67,7 @@ function next() {
 }
 
 function handleProgress() {
-  $("#progId").text(`Question: ${curQuestion} / ${STORE.questions.length}`);
+  $("#progId").text(`Question: ${curQuestion +1} / ${STORE.questions.length}`);
   $("#scoreId").text(`Score: ${score} / ${STORE.questions.length}`);
   curQuestion == STORE.questions.length ? results() : run();
 }
